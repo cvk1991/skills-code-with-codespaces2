@@ -162,7 +162,7 @@
       "pipIndex": "https://mycompany.com/artifactory/api/pypi/python/simple",
       "pipIndexUrl": "https://mycompany.com/artifactory/api/pypi/python/simple",
       "pipTrustedHost": "mycompany.com"
-    }
+    },
     "postCreateCommand": ".devcontainer/postCreate.sh"
   },
   "customizations": {
