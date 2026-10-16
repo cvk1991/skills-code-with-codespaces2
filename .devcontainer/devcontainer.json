@@ -1,4 +1,176 @@
 {
   "name": "Basic Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/base:debian"
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true,
+      "version": "3.10"
+    },
+    "ghcr.io/rocker-org/devcontainer-features/miniforge:2": {
+      "version": "latest",
+      "variant": "Miniforge3"
+    },
+    "ghcr.io/stu-bell/devcontainer-features/python:0": {
+      "apt_get": true,
+      "installTools": true,
+      "min_python_version": "3.12"
+    },
+    "ghcr.io/natescherer/devcontainers-custom-features/hypermodern-python:1": {},
+    "ghcr.io/jsburckhardt/devcontainer-features/ruff:1": {},
+    "ghcr.io/oleksis/devcontainer-features/python-launcher:1": {
+      "version": "latest"
+    },
+    "ghcr.io/schlich/devcontainer-features/rye:1": {},
+    "ghcr.io/paul-gilber/devcontainer-features/jinja2-cli-homebrew:1": {
+      "version": "latest"
+    },
+    "ghcr.io/hspaans/devcontainer-features/pycqa:2": {
+      "doc8_version": "latest",
+      "docformatter_version": "latest",
+      "eradicate_version": "latest",
+      "isort_version": "latest",
+      "pydocstyle_version": "latest",
+      "pyflakes_version": "latest"
+    },
+    "ghcr.io/hspaans/devcontainer-features/pyupgrade:2": {
+      "version": "latest"
+    },
+    "ghcr.io/va-h/devcontainers-features/uv:1": {
+      "version": "latest"
+    },
+    "ghcr.io/e-gineering/devcontainer-features/rye:1": {
+      "bashCompletion": true
+    },
+    "ghcr.io/gvatsal60/dev-container-features/uv:0": {},
+    "ghcr.io/devcontainers-extra/features/activemq-sdkman:2": {
+      "version": "latest",
+      "jdkVersion": "latest",
+      "jdkDistro": "ms"
+    },
+    "ghcr.io/devcontainers-extra/features/bandit:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/black:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/brownie:2": {
+      "version": "latest",
+      "pythonVersion": "os-provided"
+    },
+    "ghcr.io/devcontainers-extra/features/coverage-py:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/cyclonedx-python:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/flake8:2": {
+      "version": "latest",
+      "plugins": "flake8-black"
+    },
+    "ghcr.io/devcontainers-extra/features/flit:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/hatch:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/invoke:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/isort:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/jake:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/mypy:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/nim-asdf:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/nox:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/pdm:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/poetry:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/pyinfra:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/pylint:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/pyoxidizer:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/pyscaffold:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/ruff:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/sigstore-python:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/syntaqx-serve:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/twine:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/ty:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/ufmt:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/uv:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/uv-tool:1": {},
+    "ghcr.io/devcontainers-extra/features/vulture:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/xonsh:1": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/yamllint:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers-extra/features/yapf:2": {
+      "version": "latest"
+    },
+    "features": {
+   "ghcr.io/devcontainers/features/python:1": {
+      "installTools": true,
+      "version": "3.10"
+   }
+},
+    "ghcr.io/roul/devcontainer-features/mise-python:1": {},
+    "ghcr.io/itsalljustdata/devcontainers-custom-features/python-virtualenv:1": {},
+    "ghcr.io/httpdss/devcontainers-features/struct:1": {},
+    "ghcr.io/mrsimonemms/devcontainers/temporal-nexgen:1": {
+      "version": "latest"
+    },
+    "ghcr.io/sliekens/devcontainer-features/mistral-vibe:1": {},
+    "ghcr.io/postfinance/devcontainer-features/python:1": {
+      "version": "latest",
+      "downloadUrl": "https://mycompany.com/artifactory/python-generic-ftp-remote",
+      "pipIndex": "https://mycompany.com/artifactory/api/pypi/python/simple",
+      "pipIndexUrl": "https://mycompany.com/artifactory/api/pypi/python/simple",
+      "pipTrustedHost": "mycompany.com"
+    }
+    "postCreateCommand": ".devcontainer/postCreate.sh"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.debugpy"
+      ]
+    }
+  }
 }
